@@ -6,7 +6,7 @@ export default axios.create({
 		kind: 'youtube#video',
 		part: 'snippet',
 		maxResults: 15,
-		key: 'AIzaSyAeNHN86FLugdkdwmsDYciNtaoAreV_scY'
+		key: 'AIzaSyAeNHN86FLugdkdwmsDYciNtaoAreV_scY' // plug your API key here, mine is only accepting requests from my IP adress
 	},
 	headers: {}
 });
