@@ -1,0 +1,47 @@
+.video {
+    margin: 20px 15px;
+  }
+  .video-container{
+    display: flex;
+  }
+
+  .video-container > img{
+    width: 50%;
+    margin: 10px 5px;
+  }
+  
+  .thumbnail-title{
+    padding: 10px;
+    font-weight: 550;
+    font-size: 14px;
+    color: rgb(255, 255, 255);
+  }
+  
+  .video-list {
+    border: 1px solid rgb(167, 167, 167);
+    grid-row: span 2;
+    height: 100%;
+    margin-top: 5px;
+    overflow: auto;
+  }
+  
+  .video-player {
+      width: 95%;
+      display: block;
+      margin-top: 15px;
+     margin-left: 4%;
+      
+  }
+  .video-player iframe {
+    width: 100%;
+    display: block;
+    height: 500px;
+  }
+  
+  .video-player .description{
+    color: white;
+  }
+  
+  .video-player .title{
+    color: white;
+  }

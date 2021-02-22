@@ -1,0 +1,67 @@
+html {
+    font-family: sans-serif;
+    box-sizing: border-box;
+    background-color: rgb(49, 49, 49);
+    margin: 0px 0px;
+  }
+  
+  body,
+  #root,
+  .App {
+    margin:0;
+    height: 100%;
+  }
+  
+  .container {
+      width: 25px;
+      margin-right: 5px;
+    vertical-align: center;
+    }
+
+/* resize images */
+.container img {
+    width: 100%;
+    height: auto;
+    }
+
+
+  .App {
+    display: grid;
+    grid-template-columns: 65% 1fr;
+    grid-template-rows: 55px;
+  }
+  .search-form {
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    opacity: 98%;
+    background-color: rgb(49, 49, 49);
+  }
+  
+  .form-controls {
+    display: flex;
+    width: inherit;
+    align-items: center;
+    margin-bottom: 2px; 
+  }
+  .form-controls input{
+    background-color: rgb(26, 26, 26);
+    width: 200px;
+    color:#fff;
+  }
+  .form-controls input[type="text"] {
+      padding-left: 10px;
+    display: flex;
+    flex-grow: 1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  .form-controls input[type="text"]:focus {
+    outline: none;
+    border-color: gray;
+    box-shadow: 0 2px 5px lightgray;
+  }
+  
+  .form-controls label {
+    display: none;
+  }
