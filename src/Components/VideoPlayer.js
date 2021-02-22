@@ -1,5 +1,4 @@
 import React from 'react';
-import { renderStatic } from 'react-helmet';
 
 const VideoPlayer = ({ videoId, videoTitle, videoDesc }) => {
 	window.scrollTo(0, 0);

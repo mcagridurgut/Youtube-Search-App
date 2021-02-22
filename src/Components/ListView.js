@@ -2,7 +2,7 @@ import React from 'react';
 
 import Video from './Video';
 
-const VideoList = ({ data, onVideoSelected }) => {
+const ListView = ({ data, onVideoSelected }) => {
 	return (
 		<div className="video-list">
 			<div>
@@ -12,4 +12,4 @@ const VideoList = ({ data, onVideoSelected }) => {
 	);
 };
 
-export default VideoList;
+export default ListView;

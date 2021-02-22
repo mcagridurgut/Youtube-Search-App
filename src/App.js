@@ -3,7 +3,7 @@ import './Styles/styles.css';
 import SearchBar from './Components/Bar';
 import api from './Connection/api';
 import VideoPlayer from './Components/VideoPlayer';
-import VideoList from './Components/VideoList';
+import ListView from './Components/ListView';
 import { Helmet } from 'react-helmet';
 
 const TITLE = 'My Pages Title';
@@ -42,7 +42,7 @@ class App extends React.Component {
 				</Helmet>
 				<div className="App">
 					<SearchBar onSearch={this.onSearch} />
-					<VideoList onVideoSelected={this.onVideoSelected} data={this.state.videos} />
+					<ListView onVideoSelected={this.onVideoSelected} data={this.state.videos} />
 					<VideoPlayer
 						videoId={this.state.selectedID}
 						videoTitle={this.state.selectedTitle}
