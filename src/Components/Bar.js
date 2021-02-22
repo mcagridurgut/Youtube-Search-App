@@ -1,4 +1,6 @@
 import React from 'react';
+import IconButton from '@material-ui/core/IconButton';
+import SearchIcon from '@material-ui/icons/Search';
 
 class Bar extends React.Component {
 	state = { title: '' };
@@ -12,7 +14,7 @@ class Bar extends React.Component {
 	};
 	render() {
 		return (
-			<form onSubmit={this.onSubmit} className="search-form" autocomplete="off">
+			<form onSubmit={this.onSubmit} className="search-form" autoComplete="off">
 				<div className="form-controls">
 					<div className="container">
 						<img src="https://image.flaticon.com/icons/png/128/1383/1383260.png" />
@@ -24,9 +26,9 @@ class Bar extends React.Component {
 						onChange={this.onSearchChanged}
 						placeholder="Enter Search Keyword"
 					/>
-					<button id="video-search-button" type="submit">
-						<i class="fa fa-search" />
-					</button>
+					<IconButton id="IconButton" type="submit">
+						<SearchIcon className="SearchIcon" />
+					</IconButton>
 				</div>
 			</form>
 		);

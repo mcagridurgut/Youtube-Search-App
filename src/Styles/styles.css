@@ -13,9 +13,10 @@ html {
   }
   
   .container {
-      width: 25px;
-      margin-right: 5px;
-    vertical-align: center;
+      width: 45px;
+      margin-left: 20px;
+      margin-right: 20px;
+      align-self: center;
     }
 
 /* resize images */
@@ -34,6 +35,7 @@ html {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 0;
+    height:50px;
     opacity: 98%;
     background-color: rgb(49, 49, 49);
   }
@@ -41,8 +43,6 @@ html {
   .form-controls {
     display: flex;
     width: inherit;
-    align-items: center;
-    margin-bottom: 2px; 
   }
   .form-controls input{
     background-color: rgb(26, 26, 26);
@@ -64,4 +64,8 @@ html {
   
   .form-controls label {
     display: none;
+  }
+  #IconButton{
+    background: dimgrey;
+    border-radius: 0% 20% 20% 0%;
   }

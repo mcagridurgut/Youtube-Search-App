@@ -1,6 +1,8 @@
 import React from 'react';
+import { renderStatic } from 'react-helmet';
 
 const VideoPlayer = ({ videoId, videoTitle, videoDesc }) => {
+	window.scrollTo(0, 0);
 	if (!videoId) {
 		return (
 			<p style={{ textAlign: 'center', color: 'white', fontSize: '18px', fontWeight: 'bold' }}>
@@ -8,6 +10,7 @@ const VideoPlayer = ({ videoId, videoTitle, videoDesc }) => {
 			</p>
 		);
 	}
+
 	return (
 		<div className="video-player">
 			<div class="videoWrapper">
