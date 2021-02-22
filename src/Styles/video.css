@@ -45,3 +45,7 @@
   .video-player .title{
     color: white;
   }
+
+  .video-container:hover{
+    background-color: rgb(71, 71, 71);
+  }
